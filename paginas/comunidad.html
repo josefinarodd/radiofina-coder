@@ -4,43 +4,90 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Comunidad</title>
-    <link rel="stylesheet" href="../style/estilos.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
     <link href="https://fonts.googleapis.com/css2?family=Merriweather:ital,opsz,wght@0,18..144,300..900;1,18..144,300..900&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bangers&family=Merriweather:ital,opsz,wght@0,18..144,300..900;1,18..144,300..900&family=Quicksand:wght@300..700&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../style/style.css">
+
 </head>
 
 <body>
-    <header>
 
-         <a href="../index.html">
-         <img class="logo_radiofina" src="../medios/Black White Grey Round Monogram Typography Logo-Photoroom.png" alt="Logo radiofina">
-         </a>
-         <nav>
-            <ul>
-                <li><a href="../paginas/comunidad.html">Comunidad</a></li>
-                <li><a href="../paginas/podcast.html">Podcast</a></li> 
-            </ul>
-         </nav>
+        <header>
+            <a href="../index.html">
+            <img class="logo_radiofina" src="../medios/Black White Grey Round Monogram Typography Logo-Photoroom.png" alt="">
+            </a>
+            <nav>
+                <ul class="paginas">
+                    <li><a href="../paginas/comunidad.html">Comunidad</a></li> 
+                    <li><a href="../paginas/podcast.html">Podcast</a></li> 
+                 </ul>
+            </nav>
     </header>
 
     <main>
 
-        <section>
+        <section class="comunidad-radiofina" >
                 <h1>COMUNIDAD RADIOFINA</h1>
                 <p>Bienvenid@ a nuestra comunidad, un espacio creado para compartir lo que nos gusta y nuestros momentos favoritos de los streams, videos, podcast, etc.</p>
                 <h2>Acá podes:</h2>
-                <ul>
-                    <li>Conectar con otras personas de la comunidad.</li>
-                    <li>Ver los momentos más divertidos y memes de los streams y videos de youtube. </li>
-                    <li>Enterarte de las fechas de eventos, transmisiones y nuevo contenido.</li>
-                    <li>Aportar tus ideas y creaciones relacionadas con la comunidad.</li>
-                </ul>
         </section>
 
-        <a class="discord_link" href="https://discord.gg/TGX59X5tnt">Unite a nuestro canal de Discord!</a>
 
-        <section>
+        <section class="carrusel">
+        <div id="carouselExampleCaptions" class="carousel slide container">
+  <div class="carousel-indicators">
+    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+  </div>
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <img src="../medios/comunidad.png" class="d-block w-100" alt="...">
+      <div class="carousel-caption d-none d-md-block">
+        <h5>Conectar con otras personas de la comunidad! </h5>
+        <p>Hacete amigo de las personas del chat y comentarios.</p>
+      </div>
+    </div>
+    <div class="carousel-item">
+      <img src="../medios/memes.png" class="d-block w-100" alt="...">
+      <div class="carousel-caption d-none d-md-block">
+        <h5>Ver los momentos más divertidos!</h5>
+        <p>Muchos memes de los streams y videos de youtube.</p>
+      </div>
+    </div>
+    <div class="carousel-item">
+      <img src="../medios/nuevos videos.png" class="d-block w-100" alt="...">
+      <div class="carousel-caption d-none d-md-block">
+        <h5>Enterarte de las fechas:</h5>
+        <p>eventos, transmisiones y nuevo contenido.</p>
+      </div>
+    </div>
+  </div>
+  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Previous</span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Next</span>
+  </button>
+</div>
+        </section>
+
+        <section class="discord-link">
+        <h3>Sumate a nuestro servidor de Discord! </h3>
+        <p>Hace click en el icono de abajo</p>
+        <a href="https://discord.gg/TGX59X5tnt">
+            <img src="../medios/discord.webp" alt="servidor de discord">
+        </a>
+        </section>
+
+        <section class="formulario-dos">
             <h3>¿Tenes alguna idea de juegos, temas, videos o algo que te gustaría ver proximamente? ¡Enviamela!</h3>
             <form action="#" method="post">
                 <label for="Nombre">Nombre:</label>
@@ -48,7 +95,7 @@
                 <label for="Usuario de twitch">Usuario de Twitch:</label>
                 <input type="text">
                 <label for="contame tu idea">Contame tu idea:</label>
-                <textarea name="Mensaje" id="Mensaje"></textarea> 
+                <textarea class="form-texto" name="Mensaje" id="Mensaje"></textarea> 
                 <input type="button" value="Enviar">
             </form>
         </section>
@@ -56,18 +103,12 @@
     </main>
 
         <footer>
-            
-            <a href="https://www.instagram.com/josefinarodd/"> 
-            <img src="../medios/instagram_5968915.png" alt="">
-            </a>
-            <a href="https://www.twitch.tv/josefinarodd">
-                <img src="../medios/twitch_4423460.png" alt="">
-            </a>
-            <a href="https://www.youtube.com/@josefinarodd">
-                <img src="../medios/play_10110416.png" alt="">
-            </a>
-
+            <img src="../medios/footer.png" alt="radiofina">
         </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+
+
 
 </body>
 </html>
