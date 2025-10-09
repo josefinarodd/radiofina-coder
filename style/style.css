@@ -5,9 +5,9 @@
     box-sizing: border-box;
 }
 
-/* COLOR PARA EL BODY */
-
 @media only screen and (min-width: 979px) {
+
+/* COLOR PARA EL BODY */    
 body {
     background-color: black;
 }
@@ -152,19 +152,14 @@ main .grid-principal h3 a {
 }
 
 .clips1 {
-    display: flex;
-    justify-content: space-around;
     height: 400px;
     margin-top: 20px;
     margin-bottom: 20px;
+    border: rgb(232, 163, 228) 10px solid;
+    margin-left: 250px;
+    border-radius: 10px;
 }
 
-.clips2 {
-    display: flex;
-    justify-content: space-around;
-    height: 400px;
-    margin-bottom: 20px;
-}
 
 /*FORMULARIO DE RECOMENDACION*/
 
@@ -355,20 +350,325 @@ footer img {
     font-weight:bolder;
     margin-bottom: 20px;
 }
-
 }
 
-
+/*Estilo para mobile INDEX*/
 
 @media only screen and (max-width: 480px) {
-    
     body {
-        background-color: #a444ff;
+        background-color: black;
     }
 
+    /* HEADER */ /**/
+
+        header {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        background-color: #232323;
+        width: 100%;
+        position: fixed;
+        top: 0;
+        left: 0;
+        z-index: 1000;
+        padding: 0 20px;
+        box-sizing: border-box;
+    }
+
+    .logo_radiofina {
+        height: 90px;
+        display: block;
+    }
+
+    .paginas {
+        display: flex;
+        flex-direction: row;
+        list-style: none;
+        gap: 45px;
+        margin: 0;
+        padding: 0;
+        font-family: "Roboto Condensed", sans-serif;
+        font-weight: bold;
+        font-size: 16px;
+    }
+
+    .paginas a {
+        color: #e997b2;
+        text-decoration: none;
+        line-height: 1;
+        display: flex;
+        align-items: center;
+    }
+
+    /* MAIN */
+
+    main .grid-principal {
+    background-color: black;
+    display: grid;
+    grid-template-areas: 
+    "bienvenidos bienvenidos"
+    "comunidad comunidad"
+    "ultimo-stream ultimo-stream"
+    "imagen-uno imagen-uno";
+    grid-template-columns: 6fr 4fr;
+    grid-template-rows: auto auto auto;
+    padding-top: 20px;
+    border-radius: 10px;
+    }
+
+    /* BIENVENIDA MAIN */
+
+    main .grid-principal h1 {
+    grid-area: bienvenidos;
+    font-family: "Roboto Condensed", sans-serif;
+    color: #e997b2;
+    font-size: 1.5rem;
+    padding-top: 100px;
+    display: flex;
+    text-align: center;
+    }
+
+    main .grid-principal p {
+    grid-area: comunidad;
+    font-size: 1rem;
+    color: white;
+    text-align: center;
+    margin-top: 10px;
+    font-family: "Quicksand", sans-serif;
+    padding-left: 30px;
+    padding-right: 30px;
+    
+    }
+
+    main .grid-principal h3 {
+    grid-area: ultimo-stream;
+    font-family: "Roboto Condensed", sans-serif;
+    font-weight: bold;
+    font-size: 1rem;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    }
+
+    main .grid-principal h3 a {
+    color: white;
+    text-decoration: none;
+    display: block;
+    background-color: #a444ff;
+    padding: 10px;
+    border-radius: 10px; 
+    text-align: center;
+    margin-left: 100px;
+    margin-right: 100px;
+       
+    }
+
+    .imagen-uno {
+    grid-area: imagen-uno;
+    width: 100%;
+    height: 100%;
+    padding-top: 10px;
+    padding-bottom: 30px;
+    }
+
+    /* MAIN REDES SOCIALES DONDE VER*/
+
+    .donde-ver {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: rgb(255, 203, 240);
+    height: 100px;
+    width: 100%;
+    }
+
+    .twitch {
+    height: 50px;
+    }
+
+    .youtube {
+    height: 50px;
+    }
+
+    .tiktok {
+    height: 50px;
+    }
+
+    .spotify {
+    height: 50px;
+    }
+
+    /*CLIPS DESTACADOS DEL MES*/
+
+    .videos h2 {
+    background-color: rgb(0, 0, 0);
+    font-size: 1.4rem;
+    color: #e997b2;
+    text-align: center;
+    padding: 30px;
+    margin-top: 20px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    }
+
+    .clips1 {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    border: rgb(255, 204, 252) 6px solid;
+    border-radius: 10px;
+    }
+
+    /*FORMULARIO DE RECOMENDACION*/
+
+    .titulo-recomendacion {
+    background-color: black ;
+    height: 60px;
+    color: #e997b2;
+    text-align: center;
+    padding-top: 10px;
+    margin-bottom: 10px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 1.2rem;
+    }
+
+    .formulario {
+    background-color: rgb(255, 203, 240);
+    height: 150px;
+    width: 100%;
+    border: black 20px solid;
+    font-family: "Quicksand", sans-serif;
+    font-size: 0.9rem;
+    font-weight: bold;
+    padding-left: 20px;
+    padding-top: 10px;
+
+    }
+
+    .formulario label {
+    display: flex;
+    align-items: flex-start;
+    }
+
+    .enviar {
+    margin-left: 20px;
+    padding-left: 10px;
+    padding-right: 10px;
+    }
+
+    /*FOOTER*/
+
+    footer {
+    background-color: black;
+    }
+
+    footer img {
+    width: 100%;
+    }
+    }
+
+    /*Estilo para mobile COMUNIDAD*/
+
+@media only screen and (max-width: 480px) {
+
+.comunidad-radiofina {
+    padding-top: 120px;
+    color: white;
+}
+
+.comunidad-radiofina h1 {
+    color: #e997b2;
+    text-align: center;
+    font-size: 1.5rem;
+    font-family: "Roboto Condensed", sans-serif;
+    font-weight: bolder;
 
 }
 
+.comunidad-radiofina p {
+    text-align: center;
+    color: white;
+    font-size: 1rem;
+    font-family: "Quicksand", sans-serif;
+    padding-left: 10px;
+    padding-right: 10px;
+
+}
+
+.comunidad-radiofina h2 {
+    text-align: center;
+    padding-bottom: 10px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #e997b2;
+}
+
+.discord-link {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-decoration: none;
+    margin-top: 40px;
+}
+
+.discord-link h3 {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 1.1rem;
+    text-align: center;
+    font-weight: bold;
+    color: #e997b2;
+}
+
+.discord-link a img {
+    height: 60px;
+    width: 60px;
+}
+
+.discord-link p {
+    font-family: "Quicksand", sans-serif;
+    color: white;
+    font-size: 0.9rem;
+
+}
+
+.formulario-dos {
+    background-color: rgb(255, 203, 240);
+    height: 300px;
+    border: black 20px solid;
+    font-family: "Quicksand", sans-serif;
+    font-size: 0.9rem;
+    text-align: center;
+    border: white 5px solid;
+    margin-top: 20px;
+    margin-left: 8px;
+    margin-right: 8px;
+    
+}
+
+.formulario-dos h3 {
+    text-align: center;
+    padding-top: 15px;
+    font-weight:bolder;
+    margin-bottom: 20px;
+    font-size: 0.9rem;
+}
+
+.form-texto {
+    vertical-align: middle;
+}
+
+.labels {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items:center;
+}
+ }
 
 
 
