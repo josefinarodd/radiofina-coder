@@ -4,12 +4,10 @@
   box-sizing: border-box;
 }
 
-/* COLOR PARA EL BODY */
 body {
   background-color: #000000;
 }
 
-/* HEADER */
 header {
   display: flex;
   flex-direction: row;
@@ -38,7 +36,6 @@ header .paginas a {
   text-decoration: none;
 }
 
-/* MAIN */
 main .grid-principal {
   background-color: #000000;
   display: grid;
@@ -91,9 +88,6 @@ main .grid-principal .imagen-uno {
   width: 100%;
   height: 100%;
 }
-main {
-  /* MAIN REDES SOCIALES DONDE VER */
-}
 main .donde-ver {
   display: flex;
   justify-content: space-around;
@@ -106,9 +100,6 @@ main .donde-ver .twitch, main .donde-ver .spotify, main .donde-ver .tiktok, main
 }
 main .animate__animated.animate__flash {
   --animate-duration: 5s;
-}
-main {
-  /* CLIPS DESTACADOS DEL MES */
 }
 main .presentacion-clips h2 {
   background-color: #000000;
@@ -129,9 +120,6 @@ main .videos .clip2 {
   margin-bottom: 20px;
   border: rgb(232, 163, 228) 6px solid;
   border-radius: 10px;
-}
-main {
-  /* FORMULARIO DE RECOMENDACION */
 }
 main .titulo-recomendacion {
   background-color: #000000;
@@ -307,7 +295,7 @@ footer img {
   vertical-align: middle;
 }
 
-/* Estilo mobile INDEX - anidado en SCSS */
+/* Estilo mobile INDEX  */
 /*Estilo para mobile COMUNIDAD*/
 @media only screen and (max-width: 481px) {
   .comunidad-radiofina {

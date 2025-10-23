@@ -1,12 +1,12 @@
 @use "./variable" as*;
 
-/* COLOR PARA EL BODY */    
+   
 body {
   background-color: $negro;
   
 }
 
-/* HEADER */
+
 header {
   display: flex;
   flex-direction: row;
@@ -38,7 +38,7 @@ header {
   }
 }
 
-/* MAIN */
+
 main {
   .grid-principal {
     background-color: $negro;
@@ -102,7 +102,6 @@ main {
     }
   }
 
-  /* MAIN REDES SOCIALES DONDE VER */
   .donde-ver {
     display: flex;
     justify-content: space-around;
@@ -125,7 +124,7 @@ main {
   
   }
 
-  /* CLIPS DESTACADOS DEL MES */
+
   .presentacion-clips {
     h2 {
       background-color: $negro;
@@ -151,7 +150,7 @@ main {
     }
   }
 
-  /* FORMULARIO DE RECOMENDACION */
+
   .titulo-recomendacion {
     background-color: $negro;
     height: 60px;
