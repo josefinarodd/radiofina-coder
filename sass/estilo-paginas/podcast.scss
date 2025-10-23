@@ -1,0 +1,79 @@
+@use "./variable" as*;
+/*Estilo del HTML podcast*/
+
+.presentacion-podcast {
+    padding-top: 120px;
+    background-color: $negro;
+    margin-bottom: 20px;
+    text-align: center;
+    padding-bottom: 10px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 2rem;
+    font-weight: bold;
+    color: $rosa;
+
+    h1 {
+        color: $rosa;
+        text-align: center;
+        font-size: 4rem;
+        font-family: "Roboto Condensed", sans-serif;
+        font-weight: bolder;    
+    }
+
+    p {
+        font-family: "Quicksand", sans-serif;
+        color: $blanco;
+        text-align: center;
+        font-size: 1.2rem;
+    }
+}
+
+.accordion-button {
+    background-color: $rosa;
+    font-weight: bolder;
+}
+
+.accordion-item {
+   background-color: $rosa;
+}
+
+.accordion-collapse {
+    background-color: $gris;
+    color: $blanco;
+}
+
+
+.episodios{
+    margin-top: 20px;
+    margin-bottom: 20px;
+    color: $rosa;
+    padding-left: 20px;
+}
+
+.click {
+    color: chartreuse;
+    margin-left: 20px;
+    font-size: 1.2rem;
+    font-family: "Quicksand", sans-serif;
+    text-decoration: none;
+}
+
+.formulariotres {
+    background-color: rgb(255, 203, 240);
+    height: 200px;
+    border: black 20px solid;
+    font-family: "Quicksand", sans-serif;
+    font-size: 1.2rem;
+    text-align: center;
+
+    h4 {
+    text-align: center;
+    padding-top: 15px;
+    font-weight:bolder;
+    margin-bottom: 20px;
+    }
+
+ .form-texto {
+            vertical-align: middle;
+}
+}
