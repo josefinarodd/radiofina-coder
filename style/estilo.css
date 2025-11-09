@@ -63,7 +63,7 @@ main .grid-principal p {
   padding-top: 60px;
   font-family: "Quicksand", sans-serif;
 }
-main .grid-principal h3 {
+main .grid-principal h2 {
   grid-area: ultimo-stream;
   font-family: "Roboto Condensed", sans-serif;
   font-weight: bold;
@@ -72,7 +72,7 @@ main .grid-principal h3 {
   align-items: flex-start;
   justify-content: center;
 }
-main .grid-principal h3 a {
+main .grid-principal h2 a {
   color: #ffffff;
   text-decoration: none;
   display: block;
@@ -296,15 +296,269 @@ footer img {
 }
 
 /* Estilo mobile INDEX  */
+@media only screen and (max-width: 481px) {
+  .barra-nav a img {
+    height: 75px;
+  }
+  .barra-nav .paginas {
+    font-size: 1rem;
+  }
+  main .grid-principal {
+    background-color: black;
+    display: grid;
+    grid-template-areas: "bienvenidos bienvenidos" "comunidad comunidad" "imagen-uno imagen-uno" "ultimo-stream ultimo-stream";
+    grid-template-columns: 6fr 4fr;
+    grid-template-rows: auto auto auto auto;
+    padding-top: 0px;
+    border-radius: 10px;
+  }
+  main .grid-principal h1 {
+    font-size: 2rem;
+    text-align: center;
+    padding-bottom: 5px;
+    padding-left: 0px;
+  }
+  main .grid-principal p {
+    font-size: 0.9rem;
+    padding-top: 0px;
+    text-align: center;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-bottom: 10px;
+  }
+  main .grid-principal h3 a {
+    font-size: 1rem;
+    padding: 5px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+  main .donde-ver {
+    width: 100%;
+    height: 100px;
+  }
+  main .donde-ver a img {
+    width: 80px;
+    height: 70%;
+  }
+  main .donde-ver .twitch {
+    height: 60px;
+    width: 60px;
+  }
+  main .donde-ver .youtube {
+    height: 80px;
+    width: 80px;
+  }
+  main .donde-ver .spotify {
+    height: 60px;
+    width: 60px;
+  }
+  main .donde-ver .tiktok {
+    height: 60px;
+    width: 60px;
+  }
+  .videos {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .videos .clip1 {
+    width: 85%;
+    height: 60px;
+  }
+  .videos .clip2 {
+    width: 85%;
+    height: 60px;
+  }
+  .recomendacion h2 {
+    font-size: 1rem;
+    padding-top: 0px;
+  }
+  .recomendacion .formulario {
+    background-color: rgb(255, 203, 240);
+    height: 180px;
+    width: 100%;
+    border: black 20px solid;
+    font-family: "Quicksand", sans-serif;
+    font-size: 0.9rem;
+    font-weight: bold;
+    padding-top: 10px;
+  }
+  .recomendacion .formulario label {
+    display: flex;
+    align-items: flex-start;
+  }
+  .recomendacion .formulario .enviar {
+    margin-left: 60px;
+    padding-left: 10px;
+    padding-right: 10px;
+    font-size: 0.7rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    margin-top: 10px;
+  }
+}
 /*Estilo para mobile COMUNIDAD*/
 @media only screen and (max-width: 481px) {
+  main .comunidad-radiofina h1 {
+    color: #e997b2;
+    text-align: center;
+    font-size: 1.5rem;
+    font-family: "Roboto Condensed", sans-serif;
+    font-weight: bolder;
+  }
+  main .comunidad-radiofina p {
+    text-align: center;
+    color: #ffffff;
+    font-size: 1rem;
+    font-family: "Quicksand", sans-serif;
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+  main .comunidad-radiofina h2 {
+    text-align: center;
+    padding-bottom: 10px;
+    font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #e997b2;
+  }
+  main .discord-link {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-decoration: none;
+    margin-top: 40px;
+  }
+  main .discord-link h3 {
+    font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+    font-size: 1.1rem;
+    text-align: center;
+    font-weight: bold;
+    color: #e997b2;
+  }
+  main .discord-link a img {
+    height: 60px;
+    width: 60px;
+  }
+  main .discord-link p {
+    font-family: "Quicksand", sans-serif;
+    color: #ffffff;
+    font-size: 0.9rem;
+  }
+  main .formulario-dos {
+    background-color: rgb(255, 203, 240);
+    height: 310px;
+    border: #ffffff 5px solid;
+    font-family: "Quicksand", sans-serif;
+    font-size: 0.9rem;
+    text-align: center;
+    margin-top: 20px;
+    margin-left: 8px;
+    margin-right: 8px;
+  }
+  main .formulario-dos h3 {
+    text-align: center;
+    padding-top: 15px;
+    font-weight: bolder;
+    margin-bottom: 20px;
+    font-size: 0.9rem;
+  }
+  main .formulario-dos .form-texto {
+    vertical-align: middle;
+  }
+  main .formulario-dos .labels {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+  }
+  main .formulario-dos .enviar {
+    margin-top: 5px;
+    padding: 2px;
+    font-size: 0.9rem;
+  }
+  /*Estilo para mobile PODCAST*/
+}
+@media only screen and (max-width: 481px) and (max-width: 481px) {
+  main .presentacion-podcast h1 {
+    color: #e997b2;
+    text-align: center;
+    font-size: 1.5rem;
+    font-family: "Roboto Condensed", sans-serif;
+    font-weight: bolder;
+  }
+  main .presentacion-podcast p {
+    text-align: center;
+    color: #ffffff;
+    font-size: 1rem;
+    font-family: "Quicksand", sans-serif;
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+  main .presentacion-podcast .aca-podes {
+    color: #e997b2;
+    text-align: center;
+    font-size: 1.5rem;
+    font-family: "Roboto Condensed", sans-serif;
+    font-weight: bolder;
+  }
+  main .episodios h3 {
+    margin-bottom: 20px;
+    font-size: 1.2rem;
+    font-weight: bold;
+  }
+  main .click {
+    margin-bottom: 30px;
+    font-size: 1rem;
+    padding-left: 10px;
+  }
+}
+/*Estilo para tablet COMUNIDAD*/
+@media only screen and (max-width: 1280px) {
+  header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #232323;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    padding: 0 20px;
+    box-sizing: border-box;
+  }
+  header .logo_radiofina {
+    height: 100px;
+    display: block;
+  }
+  header .paginas {
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+    gap: 45px;
+    margin: 0;
+    padding: 0;
+    font-family: "Roboto Condensed", sans-serif;
+    font-weight: bold;
+    font-size: 1.5rem;
+  }
+  header .paginas a {
+    color: #e997b2;
+    text-decoration: none;
+    line-height: 1;
+    display: flex;
+    align-items: center;
+  }
   .comunidad-radiofina {
     color: #ffffff;
   }
   .comunidad-radiofina h1 {
     color: #e997b2;
     text-align: center;
-    font-size: 1.5rem;
+    font-size: 1.6rem;
     font-family: "Roboto Condensed", sans-serif;
     font-weight: bolder;
   }
@@ -333,23 +587,23 @@ footer img {
   }
   .discord-link h3 {
     font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
-    font-size: 1.1rem;
+    font-size: 1.5rem;
     text-align: center;
     font-weight: bold;
     color: #e997b2;
   }
   .discord-link a img {
-    height: 60px;
-    width: 60px;
+    height: 90px;
+    width: 90px;
   }
   .discord-link p {
     font-family: "Quicksand", sans-serif;
     color: #ffffff;
-    font-size: 0.9rem;
+    font-size: 1.2rem;
   }
   .formulario-dos {
     background-color: rgb(255, 203, 240);
-    height: 300px;
+    height: 290px;
     border: #ffffff 5px solid;
     font-family: "Quicksand", sans-serif;
     font-size: 0.9rem;
@@ -363,7 +617,7 @@ footer img {
     padding-top: 15px;
     font-weight: bolder;
     margin-bottom: 20px;
-    font-size: 0.9rem;
+    font-size: 1rem;
   }
   .formulario-dos .form-texto {
     vertical-align: middle;
@@ -374,20 +628,20 @@ footer img {
     justify-content: space-between;
     align-items: center;
   }
-  /*Estilo para mobile PODCAST*/
 }
-@media only screen and (max-width: 481px) and (max-width: 481px) {
+/*Estilo para tablet PODCAST*/
+@media only screen and (max-width: 1280px) {
   .presentacion-podcast h1 {
     color: #e997b2;
     text-align: center;
-    font-size: 1.5rem;
+    font-size: 2.5rem;
     font-family: "Roboto Condensed", sans-serif;
     font-weight: bolder;
   }
   .presentacion-podcast p {
     text-align: center;
     color: #ffffff;
-    font-size: 1rem;
+    font-size: 1.1rem;
     font-family: "Quicksand", sans-serif;
     padding-left: 10px;
     padding-right: 10px;
@@ -395,19 +649,116 @@ footer img {
   .presentacion-podcast .aca-podes {
     color: #e997b2;
     text-align: center;
-    font-size: 1.5rem;
+    font-size: 1.8rem;
     font-family: "Roboto Condensed", sans-serif;
     font-weight: bolder;
   }
   .episodios h3 {
     margin-bottom: 20px;
-    font-size: 1.2rem;
+    font-size: 1.6rem;
     font-weight: bold;
+    text-align: center;
   }
   .click {
     margin-bottom: 30px;
-    font-size: 1rem;
+    font-size: 1.3rem;
     padding-left: 10px;
+  }
+}
+/*Estilo para tablet INDEX*/
+@media only screen and (max-width: 1280px) {
+  .barra-nav a img {
+    height: 75px;
+  }
+  .barra-nav .paginas {
+    font-size: 1rem;
+  }
+  main .grid-principal {
+    background-color: black;
+    display: grid;
+    grid-template-areas: "bienvenidos bienvenidos" "comunidad comunidad" "imagen-uno imagen-uno" "ultimo-stream ultimo-stream";
+    grid-template-columns: 6fr 4fr;
+    grid-template-rows: auto auto auto auto;
+    padding-top: 0px;
+    border-radius: 10px;
+  }
+  main .grid-principal h1 {
+    font-size: 1.7rem;
+    padding-bottom: 5px;
+    display: flex;
+    justify-content: center;
+  }
+  main .grid-principal p {
+    font-size: 1.1rem;
+    padding-top: 0px;
+    text-align: center;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-bottom: 43px;
+  }
+  main .grid-principal h3 a {
+    font-size: 1.5rem;
+    padding: 5px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+  main .donde-ver {
+    width: 100%;
+    height: 100px;
+  }
+  main .donde-ver a img {
+    width: 80px;
+    height: 70%;
+  }
+  main .donde-ver .twitch {
+    height: 60px;
+    width: 60px;
+  }
+  main .donde-ver .youtube {
+    height: 80px;
+    width: 80px;
+  }
+  main .donde-ver .spotify {
+    height: 60px;
+    width: 60px;
+  }
+  main .donde-ver .tiktok {
+    height: 60px;
+    width: 60px;
+  }
+  .videos {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .videos .clip1 {
+    width: 50%;
+    height: 80px;
+  }
+  .videos .clip2 {
+    width: 50%;
+    height: 80px;
+  }
+  .recomendacion h2 {
+    font-size: 1.5rem;
+    padding-top: 0px;
+  }
+  .recomendacion .formulario {
+    background-color: rgb(255, 203, 240);
+    height: 150px;
+    width: 100%;
+    border: black 20px solid;
+    font-family: "Quicksand", sans-serif;
+    font-size: 1rem;
+    font-weight: bold;
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
+  .recomendacion .enviar {
+    margin-left: 10px;
+    font-size: 1rem;
+    margin-top: 10px;
+    padding: 2px;
   }
 }
 
